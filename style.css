@@ -32,13 +32,43 @@ nav a:hover {
 }
 
 .slider {
-  height: 1440pc;
+  width: 100%;
+  aspect-ratio: 1440 / 593;
   overflow: hidden;
   position: relative;
+  margin-top: 120px;
 }
 
-.slider img {
+.slides img {
   width: 100%;
+  height: 100%;
   position: absolute;
-  top: 20px; /* aumenta pra descer mais */
+  object-fit: cover;
+  top: 0;
+  opacity: 0;
+  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slides img.active {
+  opacity: 1;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;;
+}
+
+.indicators span {
+    width: 50px;
+    height: 10px;
+    background: rgb(219, 218, 218);
+    display: block;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.indicators span.active {
+    background: black;
 }
