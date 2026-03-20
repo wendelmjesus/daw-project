@@ -17,14 +17,19 @@ header {
     align-items: center;
     gap: 75px;
     position: relative;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+header img {
+    width: 4%;
 }
 
 nav a  {
-
+    font-size: 40px;
     text-decoration: none;
     color: rgb(52, 45, 45);
+    margin-top: 10px;
 }
 
 nav a:hover {
@@ -71,4 +76,49 @@ nav a:hover {
 
 .indicators span.active {
     background: black;
+} 
+
+.featured-text {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 850px);
+    justify-content: center;
+    gap: 85px;
+
+}
+
+.products {
+    display: gr;
+    justify-items: center;
+    text-align: center;
+    border: #d6d6d6 solid 0.8px;
+}
+
+
+.products img {
+    width: 850px;
+
+}
+
+.products h2 {
+    color: rgb(0, 0, 0);
+    margin-bottom: -20px;
+}
+
+.products p {
+    color: rgb(117, 117, 117);
+}
+
+hr {
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    margin: 60px;
+    margin-top: 120px;
 }
