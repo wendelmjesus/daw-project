@@ -185,6 +185,7 @@ footer {
 .social-icons {
     display: flex;           
     margin: 0;
+    gap: 10px;
 }
 
 .social-icons a {
@@ -192,6 +193,10 @@ footer {
     font-size: 70px;
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+.social-text, .social-icons{
+    margin: 0;
 }
 
 .social-icons a:hover {
