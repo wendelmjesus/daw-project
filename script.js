@@ -12,3 +12,13 @@ setInterval(() => {
   slides[index].classList.add("active");
   indicators[index].classList.add("active");
 }, 5000);
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
