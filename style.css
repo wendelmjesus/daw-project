@@ -160,17 +160,17 @@ hr {
 footer {
     color: white;
     display: flex;
-    flex-direction: column;  /* empilha verticalmente */
-    align-items: center;     /* centraliza tudo horizontalmente */
+    flex-direction: column;  
+    align-items: center;     
     text-align: center;
     padding: 100px;
     background-color: #000000;
     margin-top: 300px;
-    gap: 40px;               /* espaço entre seções */
+    gap: 40px;               
 }
 
 .footer-logo {
-    width: 150px;            /* tamanho fixo mais previsível */
+    width: 150px;            
     height: auto;
     display: block;
 }
@@ -183,8 +183,8 @@ footer {
 }
 
 .social-icons {
-    display: flex;           /* linha de ícones */
-    gap: 20px;
+    display: flex;           
+    margin: 0;
 }
 
 .social-icons a {
@@ -211,7 +211,11 @@ footer {
 }
 
 .logo-copyright h3, .logo-copyright p {
-    margin: 0;  /* remove margens padrão */
+    margin: 0;  
+}
+
+.logo-copyright img {
+    margin-top: 20px;
 }
 
 
