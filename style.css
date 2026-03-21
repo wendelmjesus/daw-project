@@ -69,12 +69,19 @@ nav a:hover {
     margin-top: 20px;
 }
 
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .slides img {
     width: 100%;
     height: 100%;
     position: absolute;
     object-fit: cover;
     top: 0;
+    left: 0;
     opacity: 0;
     transition: opacity 1.5s ease;
 }
@@ -95,6 +102,8 @@ nav a:hover {
     height: 8px;
     background: #ddd;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .indicators span.active {
@@ -116,39 +125,6 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.product {
-    text-align: center;
-    border: 1px solid #d6d6d6;
-    border-radius: 25px;
-    overflow: hidden;
-    transition: 0.3s ease;
-    background: white;
-}
-
-.product img {
-    width: 100%;
-}
-
-.product h2 {
-    font-size: 1.1rem;
-    margin: 15px 10px 5px;
-    font-weight: 700;
-}
-
-.product p {
-    font-size: 0.9rem;
-    color: #757575;
-    padding: 0 15px 20px;
-    font-weight: 500;
-}
-
-
-
-.product:hover {
-    transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .product-container {
@@ -178,6 +154,12 @@ nav a:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+.product-cards h2 {
+    font-size: 1.1rem;
+    margin: 15px 10px 5px;
+    font-weight: 700;
+}
+
 .product-cards p {
     font-size: 0.9rem;
     color: #757575;
@@ -185,18 +167,11 @@ nav a:hover {
     font-weight: 500;
 }
 
-.product-cards h2 {
-    font-size: 1.1rem;
-    margin: 15px 10px 5px;
-    font-weight: 700;
-}
-
 .product-page-text {
     max-width: 800px;
     margin: 0 auto;
     gap: 0px;
 }
-
 
 .product-page-text h1 {
     font-size: 2.8rem;
@@ -223,7 +198,7 @@ hr {
 
 .data-filter {
     display: flex;
-    align-items: cernter;
+    align-items: center;
     justify-content: flex-start; 
     gap: 15px;
     max-width: 1200px;           
@@ -312,9 +287,6 @@ footer p {
     margin: 5px 0 0;
     color: #ccc;
 }
-
-
-
 
 @media (max-width: 1024px) {
     .featured-text {
