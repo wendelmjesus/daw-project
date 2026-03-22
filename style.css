@@ -244,13 +244,7 @@ hr {
     margin-bottom: 20px;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;    
-    gap: 15px;
-    padding: 0px 20px 20px 0px;
-    width: 50%;
-}
+
 
 input[type="text"],
 input[type="email"] {
@@ -284,6 +278,7 @@ textarea::placeholder {
 }
 
 .send-message {
+    position: relative;
     background-color: #000;
     color: #fff;
     border: none;
@@ -296,6 +291,31 @@ textarea::placeholder {
 }
 .send-message:hover {
     background-color: #5c5c5c;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;    
+    gap: 15px;
+    padding: 0px 20px 60px 0px; 
+    width: 50%;
+    position: relative; 
+}
+
+#confirmation-message {
+    position: absolute;
+    top: calc(100% + -40px); 
+    left: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+#confirmation-message.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 footer {
@@ -344,8 +364,9 @@ footer p {
 }
 
 .social-media-contact h3 {
+    position: relative;
     font-size: 3vh;
-    margin-top: 20px;
+    margin-top: 5px;
     display: flex;
     align-items: left;
     gap: 20px;

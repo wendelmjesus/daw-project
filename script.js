@@ -2,6 +2,8 @@ const slides = document.querySelectorAll(".slides img");
 const indicators = document.querySelectorAll(".indicators span");
 const filter = document.querySelector("#filter");
 const products = document.querySelectorAll(".product-cards");
+const button = document.querySelector(".send-message");
+const message = document.querySelector("#confirmation-message");
 
 function showSlide(i) {
   slides.forEach((slide, idx) => {
@@ -9,6 +11,22 @@ function showSlide(i) {
     indicators[idx].classList.toggle("active", idx === i);
   });
 }
+
+if (button && message) {
+  button.addEventListener("click", () => {
+    message.textContent = "Mensagem enviada! Entraremos em contato em breve.";
+    message.classList.add("active");
+
+    setTimeout(() => {
+      message.classList.remove("active");
+    }, 3000);
+  });
+}
+
+  setTimeout(() => {
+    message.classList.remove("active");
+  }, 3000);
+
 
 let index = 0;
 
