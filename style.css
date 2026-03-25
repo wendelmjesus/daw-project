@@ -434,8 +434,7 @@ footer p {
 }
 
 .abs-card {
-  background: #f5f5f5;
-  padding: 30px;
+  background: #ffffff;
   border-radius: 10px;
 }
 
@@ -452,11 +451,11 @@ footer p {
 
 .abs-card ul {
   margin: 10px 0 20px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .abs-card li {
-  margin-bottom: -2px;
+  margin-bottom: -3px;
 }
 
 
